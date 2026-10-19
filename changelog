@@ -1,0 +1,17 @@
+## Todas as notable changes (mudanças notáveis) feitas neste projeto serão documentadas neste arquivo.
+
+[1.1.0] - 2026-03-31
+🚀 Adições e Alterações
+Substituição do Gráfico de ECG: O gráfico de linha estilo eletrocardiograma (ECG) contínuo foi substituído por uma interface gráfica focada na exibição visual de um coração dinâmico.
+
+Função de Animação Geométrica (desenharCoracao): Implementada uma rotina customizada utilizando primitivas gráficas da biblioteca Adafruit (fillCircle e fillTriangle) para desenhar e redimensionar o coração na tela OLED 128x64.
+
+Efeito de Pulsação Sincronizada: Adicionada lógica de tempo (millis) para expandir o tamanho do coração por 150 milissegundos a cada batimento cardíaco, criando um efeito visual realista de pulsação baseado no valor configurado de BPM (Batimentos Por Minuto).
+
+[1.0.0] - 2026-03-30
+🎉 Versão Inicial (Release)
+Configuração inicial do projeto utilizando microcontrolador ESP32 e display OLED SSD1306 via barramento I2C.
+
+Criação do layout básico com cabeçalho personalizado (KAREN BPM) e indicador de status (OK).
+
+Estrutura base de controle de tempo para monitoramento de frequência cardíaca.
