@@ -1,12 +1,6 @@
 # WOKWI
 ## Link do exemplo em teste: https://wokwi.com/projects/478003180485823489
 
-## 📌 Sobre o projeto
-
-O **WOOKIE** é um projeto simulador desenvolvido com ESP32 e um display OLED para simular visualmente uma linha de eletrocardiograma (ECG), exibindo uma representação gráfica dos batimentos cardíacos e a frequência em BPM (batimentos por minuto).
-
-A animação gera pulsos periódicos para representar o funcionamento de um monitor cardíaco simples.
-
 > **Importante:** este projeto é apenas uma simulação visual. Não mede batimentos cardíacos reais e não deve ser utilizado para diagnóstico ou monitoramento médico.
 
 ## 🛠️ Componentes utilizados no teste
@@ -18,7 +12,7 @@ A animação gera pulsos periódicos para representar o funcionamento de um moni
 
 ## 🔌 Ligações do display OLED
 
-O display utiliza comunicação I²C com quatro pinos.
+### Quando, se o display utiliza comunicação I²C com --> quatro pinos.
 
 | OLED | ESP32 |
 |---|---|
@@ -26,6 +20,16 @@ O display utiliza comunicação I²C com quatro pinos.
 | VCC | 3V3 |
 | SDA | GPIO 21 |
 | SCL | GPIO 22 |
+
+
+### OU quando, o display utiliza comunicação I²C com -->sete pinos.
+
+| ESP32 | OLED |
+|---|---|
+| 18 | D0 |
+| 23 | D1 |
+| SDA | GPIO 18 |
+| SCL | GPIO 23 |
 
 **Endereço I²C utilizado:** `0x3C`
 
